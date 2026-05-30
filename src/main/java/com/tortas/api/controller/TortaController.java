@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/pizzas")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 public class TortaController {
 
     private final TortaRepository repository;
