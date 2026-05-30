@@ -27,4 +27,9 @@ public class TortaController {
     public Torta salvar(@RequestBody Torta torta) {
         return repository.save(torta);
     }
+
+    @DeleteMapping("/{id}")
+    public void deletar(@PathVariable Long id) {
+        repository.deleteById(id);
+    }
 }
